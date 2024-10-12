@@ -1,5 +1,8 @@
 # Jogo da forca ASM x86 ( Intel syntax )
 
+> Warning
+> Verificação de char não esta indo como deveria
+
 ### random.inc
 Contains functions necessary to get random numbers and words.
 

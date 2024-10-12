@@ -1,4 +1,5 @@
 name = test
+all: run $(name).o $(name) clean
 
 run: $(name)
 	@./$(name)
