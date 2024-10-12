@@ -280,34 +280,6 @@ verify_char_loop:
 			inc rcx
 			jmp verify_char_loop
 
-
-;	.correct_guess_char_loop:
-;		; loop condition
-;		cmp rcx, 0x6
-;		jge ..notequals
-;
-;		; finish loop
-;		; no char match between correct guess and secret word
-;		..notequals:
-;			mov rax, 0x0
-;			ret
-;
-;		; loop body
-;		; loop
-;		; compare correctguess with secret word chars
-;		; rsi is the secret word current char
-;		cmp [rsi], [rdi]
-;		je verify_win_loop ; continue secret word loop
-;
-;		; if chars doesnt match, continue loop
-;		; increment counter and correct_guess char index
-;		inc rcx
-;		inc rdi
-;		; repeat correct char loop
-;		jmp .correct_guess_char_loop
-
-
-
 ; print game result messages
 print_win_message:
 	inc byte [secret_word_size] ; include \n on end of string
